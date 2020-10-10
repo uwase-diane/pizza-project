@@ -108,13 +108,24 @@ h5{
 .btn:hover{
     background-color:#FF6301;
 }
-.card-title{
+
+.menu-content{
     text-align: center;
-    color: #FF6301;
-    font-weight: 800;
-  }
-  .col-md-4{
-    border-radius: 10%;
-    padding: 10px;
-    
-  }
+    padding-top: 60px;
+    margin: 80px  80px;
+}
+.order-content{
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url(/home/uwase/Documents/moringa-school-projects/pizza-Project/images/hoome-image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.container-contact{
+   
+  
+
+}
