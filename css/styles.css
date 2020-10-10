@@ -59,7 +59,7 @@ span{
  
   text-align: center;
   padding-top: 50px;
-
+  font-family: 'Secular One', sans-serif;
 
 }
 .fa{
@@ -105,9 +105,7 @@ h5{
     
     margin-top: 50px;
 }
-.btn:hover{
-    background-color:#FF6301;
-}
+
 
 .menu-content{
     text-align: center;
@@ -124,8 +122,40 @@ h5{
     padding-top: 4%;
     padding-bottom: 4%;
 }
-.container-contact{
+.footer-content{
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'Secular One', sans-serif;
    
-  
+}
 
+h3{
+    font-family: 'Secular One', sans-serif;
+    color:#FF6301;
+}
+form{
+    font-family: 'Secular One', sans-serif;
+    
+}
+.row{
+    padding-top: 60px;
+}
+.copyright{
+    padding-top: 10px;
+    text-align: center;
+}
+form{
+
+   
+    margin:40px 300px;
+    border-radius: 5px;
+    -transform: translate(50%,-50%);
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.col-sm-6{
+    text-align: center;
+  
+}h3{
+    text-align: center;
 }
