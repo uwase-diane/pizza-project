@@ -9,14 +9,14 @@ This is a web application for Pizza Deliciosa which is a pizza selling venture, 
 
 ### Click here to view My Page 
 
-project link (https://uwase-diane.github.io/pizza-project/)
+project link https://uwase-diane.github.io/pizza-project/
 
 
 
 ### Installation / setup instruction
 
 * Open Terminal
-* git clone [my project link to the project repository](https://github.com/uwase-diane/pizza-project)
+* git clone my project link to the project repository https://github.com/uwase-diane/pizza-project 
 * cd Delani-studio-project
 * code . 
 
