@@ -9,11 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Flavors&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-</head>
+
 <body>
       <header>
         <div class="view page">
@@ -131,43 +127,51 @@
                 <div id="new-order">
                   <label for="name" class="col-sm-2 col-form-label col-form-label-sm">pizza: </label>
                   <div class="col-sm-6">
-                    <select class="custom-select" id="validationCustom04" required>
+                    <select class="custom-select" id="size" required>
                       <option selected disabled value="">Choose...</option>
                       <option value="small">small</option>
                       <option value="medium">medium</option>
                       <option value="large">large</option>
                     </select>
                   </div>
-                  <label for="deposit" class="col-sm-2 col-form-label col-form-label-sm">favorite Crust:</label>
+                  <label for="crust" class="col-sm-2 col-form-label col-form-label-sm">favorite Crust:</label>
                   <div class="col-sm-6">
-                    <select class="custom-select" id="validationCustom04" required>
+                    <select class="custom-select" id="crust" required>
                       <option selected disabled value="">Choose...</option>
                       <option value="cripsy">cripsy</option>
                       <option value="stuffed">Stuffed</option>
-                      <option value="sluten-free">Gluten-free</option>
+                      <option value="gluten">Gluten-free</option>
 
                     </select>
                   </div>
-                  <label for="deposit" class="col-sm-2 col-form-label col-form-label-sm">Toppings:</label>
+                  <label for="Toppings" class="col-sm-2 col-form-label col-form-label-sm">Toppings:</label>
                   <div class="col-sm-6">
-                      <input class="form-check-input col-sm-2 position-static" type="radio" name="blankRadio" id="blankRadio1" value="onions" aria-label="...">Onions
+                      <input class="form-check-input col-sm-2 position-static" type="checkbox" name="" id="onions" value="onions" aria-label="...">onions
              
-                      <input class="form-check-input col-sm-2 position-static" type="radio" name="blankRadio" id="blankRadio1" value="bacon" aria-label="...">Bacon
+                      <input class="form-check-input col-sm-2 position-static" type="checkbox" name="" id="bacon" value="bacon" aria-label="...">bacon
           
-                      <input class="form-check-input col-sm-2 position-static" type="radio" name="blankRadio" id="blankRadio1" value="olives" aria-label="...">Black olives
+                      <input class="form-check-input col-sm-2 position-static" type="checkbox" name="" id="olives" value="olives" aria-label="...">olives
                     </div>
                   </div>
                  
-                  <label for="Withdraw" class="col-sm-2 col-form-label col-form-label-sm">Number of Pizza</label>
+                  <label for="numberOfPizza" class="col-sm-2 col-form-label col-form-label-sm">Number of Pizza</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-sm" id="withdrawAmount" placeholder="">
+                    <input type="text" class="form-control form-control-sm" id="numberOfPizza" placeholder="">
                   </div>
 
                 </div>
+                <button type="submit" class="btn btn-light">Check</button>
+                <button type="submit" class="btn btn-success" onclick="Addresses()">Give Location</button>
+        
+                <div id="result">
+                  
+                </div>
+                <div id="numberOfPizzas">
 
+                </div>
               </form>
 
-              <h3>DELIVERY FORM</h3>
+              <!-- <h3>DELIVERY FORM</h3>
               <form>
                 <div id="new-contact">
                   <label for="name" class="col-sm-2 col-form-label col-form-label-sm">Name</label>
@@ -183,10 +187,10 @@
                   <div class="col-sm-6">
                     <input type="text" class="form-control form-control-sm" id="withdrawAmount" placeholder="">
                   </div>
-                </div>
-                <button type="submit" class="btn btn-light">Add</button>
+                </div> -->
+               
           
-              </form>
+              <!-- </form> -->
             </div> 
             </div>
               </section>
@@ -213,6 +217,11 @@
   </footer>  
   <div class="copyright">
     <p>2020 | dolce pizza</p>
-</div>          
+</div>    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</head>      
 </body>
 </html>

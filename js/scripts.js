@@ -22,7 +22,7 @@ else{
 if(this.crust == "cripsy"){
     priceCrust = 104;
 }
-else if(this.crust == "stuffed"){
+else if(this.crust == "gluten"){
     priceCrust = 700;
 }
 else{
@@ -30,36 +30,69 @@ else{
 }
 var priceTopping = [];
 
-for (var index = 0; index < this.topping.length; index ++){
-    if(this.topping [i] == "onions"){
-        let priceOnions = 10;
+for (var index = 0; index<this.topping.length; index++){
+    if(this.topping [index] == "onions"){
+        var priceOnions = 10;
         priceTopping.push(priceOnions);
 
     }
 }
-for (var index = 0; index < this.topping.length; index ++){
-    if(this.topping [i] == "bacon"){
-        let priceBacon = 30;
+for (var index = 0; index < this.topping.length; index++){
+    if(this.topping [index] == "bacon"){
+        var priceBacon = 30;
         priceTopping.push(priceBacon);
+        
     }
 }
-for (var index = 0; index < this.topping.length; index ++){
-    if(this.topping [i] == "olives"){
-        let priceOlives = 50;
+for (var index = 0; index<this.topping.length; index++){
+    if(this.topping [index] == "olives"){
+        var priceOlives = 50;
         priceTopping.push(priceOlives);
     }
-}
+} 
+console.log("total " +priceTopping);
 
 var priceTotalToppings = 0;
 
 var i = 0;
-while(i < priceTotalToppings.length){
+while(i < priceTopping.length){
 
     priceTotalToppings += priceTopping[i];
 
      i++;
+   
 }
+
+  console.log("total: "+priceTotalToppings);
+
  var TotalPrice = priceSize + priceCrust + priceTotalToppings;
 
   return TotalPrice;
+}
+
+$("form").submit(function(event){
+    event.preventDefault();
+
+    var inputtedSize = $("select#size").val();
+    var inputtedCrust = $("select#crust").val();
+    var inputtedNumber = $("input#numberOfPizza").val();
+    var inputtedToppins = [];
+
+    inputtedToppins = $("input:checkbox:checked").map(function(){
+        return  $(this).val();
+    }).get();
+
+    var newOrder = new OrderPizza(inputtedSize,inputtedCrust,inputtedToppins)
+    $('#result').text(newOrder.fullPizza());
+    console.log(newOrder.fullPizza())
+    var numberOfPizza = newOrder.fullPizza() * inputtedNumber;
+   $("#numberOfPizzas").text(numberOfPizza);
+
+});
+
+function Addresses(){
+    var address = prompt("Delivery cash is 500 rwf and give us your address Please!!");
+    if(address){
+        alert("it has been delivered at " + address);
+    }
 }
