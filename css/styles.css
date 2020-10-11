@@ -152,3 +152,9 @@ form{
 }h3{
     text-align: center;
 }
+#result{
+    background-color:rgba(0,0,0,.1);
+}
+#numberOfPizzas{
+    background-color:rgba(0,0,0,.1);
+}

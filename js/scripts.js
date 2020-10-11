@@ -83,10 +83,10 @@ $("form").submit(function(event){
     }).get();
 
     var newOrder = new OrderPizza(inputtedSize,inputtedCrust,inputtedToppins)
-    $('#result').text(newOrder.fullPizza());
+    $('#result').text("your result " + newOrder.fullPizza());
     console.log(newOrder.fullPizza())
     var numberOfPizza = newOrder.fullPizza() * inputtedNumber;
-   $("#numberOfPizzas").text(numberOfPizza);
+   $("#numberOfPizzas").text("your result " + numberOfPizza);
 
 });
 
