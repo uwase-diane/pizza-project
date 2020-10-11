@@ -86,7 +86,7 @@ $("form").submit(function(event){
     $('#result').text("Your Bill is " + newOrder.fullPizza() + " rwf");
     console.log(newOrder.fullPizza())
     var numberOfPizza = newOrder.fullPizza() * inputtedNumber;
-   $("#numberOfPizzas").text("Your checkout " + numberOfPizza + " rwf");
+   $("#numberOfPizzas").text("Your checkout is " + numberOfPizza + " rwf");
 
 });
 

@@ -152,14 +152,24 @@ form{
 }h3{
     text-align: center;
 }
-#result{
-    background-color:rgba(0,0,0,.1);
+#result, #numberOfPizzas{
+    background-color:rgba(0,0,0,.8);
     font-size: 2rem;
+    animation: bounce 2.6s infinite;
 }
-#numberOfPizzas{
-    background-color:rgba(0,0,0,.1);
-    font-size: 2rem;
+@keyframes bounce {
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-55px);
+  }
+  60% {
+    transform: translateY(-60px);
+  }
+
 }
+
 .button{
     margin:20px;
 }
