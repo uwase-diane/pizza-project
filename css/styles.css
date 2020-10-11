@@ -154,7 +154,9 @@ form{
 }
 #result{
     background-color:rgba(0,0,0,.1);
+    font-size: 2rem;
 }
 #numberOfPizzas{
     background-color:rgba(0,0,0,.1);
+    font-size: 2rem;
 }
