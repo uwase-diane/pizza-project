@@ -4,6 +4,9 @@ function OrderPizza (size,crust,topping = []){
     this.topping = topping;
 }
 
+OrderPizza.prototype.fullPizza = function(){
+
+
 var priceSize;
 var priceCrust;
 if(this.size == "small"){
@@ -45,4 +48,18 @@ for (var index = 0; index < this.topping.length; index ++){
         let priceOlives = 50;
         priceTopping.push(priceOlives);
     }
+}
+
+var priceTotalToppings = 0;
+
+var i = 0;
+while(i < priceTotalToppings.length){
+
+    priceTotalToppings += priceTopping[i];
+
+     i++;
+}
+ var TotalPrice = priceSize + priceCrust + priceTotalToppings;
+
+  return TotalPrice;
 }
