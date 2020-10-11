@@ -1,26 +1,22 @@
-###  Delani studio project
+###  pizza project
 #### Author
 
 [uwase-diane](https://github.com/uwase-diane)
 
 ### Description
-This project is a web application for Delani studio that shows details about the services it offers, has information about the studio, a portfolio section and a form that enables users to send their messages and concern to Delani studios.
+This is a web application for Pizza Deliciosa which is a pizza selling venture, that shows details about the services and diffent pizza they sell, their menu and also allows customers to order online for their preferred pizza depending on size, crust they need and also allows them to input a location which they would love the piza to be delivered to.
 
-
-
-### Screenhot
-![screenshot](https://res.cloudinary.com/auca/image/upload/v1601810621/screencapture-file-home-uwase-Documents-moringa-school-projects-delani-studio-project-index-html-2020-10-04-06_24_07_asenzv.png)
 
 ### Click here to view My Page 
 
-[project link](https://uwase-diane.github.io/delani-studio-project/)
+[project link]()
 
 
 
 ### Installation / setup instruction
 
 * Open Terminal
-* git clone [my project link to the project repository](https://github.com/uwase-diane/delani-studio-project.git)
+* git clone [my project link to the project repository](https://github.com/uwase-diane/pizza-project)
 * cd Delani-studio-project
 * code . 
 
@@ -31,9 +27,7 @@ This project is a web application for Delani studio that shows details about the
  * jQuery
 
 ### BDD
-the User Enter name and email and message, they wish to send. then Press submit.
-they will see an Alert which says "we have received your message"
-
+the User choose how they wish their pizza to be like based on their preference and choose if they want to be delivered the pizza .
 ### Known Bugs
 mail chimp API does not function properly.
 
