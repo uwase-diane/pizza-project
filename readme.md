@@ -9,7 +9,7 @@ This is a web application for Pizza Deliciosa which is a pizza selling venture, 
 
 ### Click here to view My Page 
 
-[project link]()
+project link (https://uwase-diane.github.io/pizza-project/)
 
 
 
