@@ -153,23 +153,12 @@ form{
     text-align: center;
 }
 #result, #numberOfPizzas{
-    background-color:rgba(0,0,0,.8);
+    color: #FF6301;
     font-size: 2rem;
-    animation: bounce 2.6s infinite;
-}
-@keyframes bounce {
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-55px);
-  }
-  60% {
-    transform: translateY(-60px);
-  }
-
+    text-decoration:underline;
 }
 
 .button{
     margin:20px;
+    margin-top: 30px;
 }
