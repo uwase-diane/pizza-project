@@ -1,3 +1,6 @@
+
+//business logic
+
 function OrderPizza (size,crust,topping = []){
     this.size = size;
     this.crust = crust;
@@ -5,6 +8,8 @@ function OrderPizza (size,crust,topping = []){
 }
 
 OrderPizza.prototype.fullPizza = function(){
+
+
 
 
 var priceSize;
@@ -37,13 +42,19 @@ for (var index = 0; index<this.topping.length; index++){
 
     }
 }
-for (var index = 0; index < this.topping.length; index++){
+
+var index = 0;
+while( index < this.topping.length){
+
+    index++;
+
     if(this.topping [index] == "bacon"){
         var priceBacon = 30;
         priceTopping.push(priceBacon);
         
     }
 }
+
 for (var index = 0; index<this.topping.length; index++){
     if(this.topping [index] == "olives"){
         var priceOlives = 50;
@@ -69,6 +80,8 @@ while(i < priceTopping.length){
 
   return TotalPrice;
 }
+
+//user interface logic
 
 $("form").submit(function(event){
     event.preventDefault();
