@@ -96,3 +96,10 @@ function Addresses(){
         alert("it has been delivered at " + address);
     }
 }
+
+var btClear = document.querySelector('button');
+ var  selects = document.querySelectorAll('select');
+
+ btClear.addEventListener('click', () =>{
+          inputs.forEach(input => input.value = '');
+ });
