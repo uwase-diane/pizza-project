@@ -156,6 +156,7 @@ form{
     color: #FF6301;
     font-size: 2rem;
     text-decoration:underline;
+    font-weight: bold;
 }
 
 .button{
