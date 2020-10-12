@@ -27,6 +27,7 @@ project link https://uwase-diane.github.io/pizza-project/
  * jQuery
 
 ### BDD
+
 the User choose how they wish their pizza to be like based on their preference and choose if they want to be delivered the pizza .
 ### Known Bugs
 mail chimp API does not function properly.
