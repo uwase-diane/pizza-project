@@ -9,9 +9,6 @@ function OrderPizza (size,crust,topping = []){
 
 OrderPizza.prototype.fullPizza = function(){
 
-
-
-
 var priceSize;
 var priceCrust;
 if(this.size == "small"){
@@ -35,7 +32,10 @@ else{
 }
 var priceTopping = [];
 
-for (var index = 0; index<this.topping.length; index++){
+var index = 0;
+while( index < this.topping.length){
+
+    index++;
     if(this.topping [index] == "onions"){
         var priceOnions = 10;
         priceTopping.push(priceOnions);
@@ -55,7 +55,10 @@ while( index < this.topping.length){
     }
 }
 
-for (var index = 0; index<this.topping.length; index++){
+var index = 0;
+while( index < this.topping.length){
+
+    index++;
     if(this.topping [index] == "olives"){
         var priceOlives = 50;
         priceTopping.push(priceOlives);
@@ -100,6 +103,8 @@ $("form").submit(function(event){
     console.log(newOrder.fullPizza())
     var numberOfPizza = newOrder.fullPizza() * inputtedNumber;
    $("#numberOfPizzas").text("Your checkout is " + numberOfPizza + " rwf");
+   
+   $("form").trigger("reset");
 
 });
 
